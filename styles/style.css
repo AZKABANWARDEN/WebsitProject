@@ -348,6 +348,7 @@ section.second section.cards div.card p {
 
 /*========================= third page ============================*/
 section.third {
+  background-color: #0a0f2c;
   min-width: 100%;
   min-height: 100vh;
   display: -webkit-box;
@@ -360,16 +361,6 @@ section.third {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-section.third img.crane {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  width: 80vw;
-  height: 60vw;
 }
 
 section.third div.thItems {

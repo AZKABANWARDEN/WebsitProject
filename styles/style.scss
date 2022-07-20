@@ -269,7 +269,7 @@ main {
 
 /*========================= third page ============================*/
   section.third {
-    // background-color: rgb(10, 15, 44);
+    background-color: rgb(10, 15, 44);
     min-width: 100%;
     min-height: 100vh;
     display: flex;
@@ -277,14 +277,14 @@ main {
     justify-content: space-around;
     align-items: center;
 
-    img.crane{
-      position: sticky;
-      top: 0;
-      right: 0;
-      z-index: -1;
-      width: 80vw;
-      height: 60vw;
-    }
+    // img.crane{
+    //   position: sticky;
+    //   top: 0;
+    //   right: 0;
+    //   z-index: -1;
+    //   width: 80vw;
+    //   height: 60vw;
+    // }
     
     div.thItems{
       display: flex;
