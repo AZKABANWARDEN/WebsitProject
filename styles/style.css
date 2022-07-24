@@ -23,15 +23,6 @@ h6 {
 
 /*=================== header-nav ==================*/
 header {
-  background-color: rgba(255, 255, 255, 0.8);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -42,20 +33,28 @@ header {
           box-shadow: 0 10px 15px -15px;
 }
 
-header .logo {
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 4em;
+  white-space: nowrap;
+}
+
+header nav .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-flex: 7;
-      -ms-flex: 7 1 200px;
-          flex: 7 1 200px;
   margin-left: 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100px;
+          flex: 1 1 100px;
 }
 
-header .logo a {
+header nav .logo a {
   text-decoration: none;
   color: black;
   font-size: 15px;
@@ -67,17 +66,9 @@ header .logo a {
           align-items: center;
 }
 
-header .logo a img {
+header nav .logo a img {
   width: 4vw;
   height: 4vw;
-}
-
-header nav {
-  -webkit-box-flex: 3;
-      -ms-flex: 3 1 200px;
-          flex: 3 1 200px;
-  height: 4em;
-  white-space: nowrap;
 }
 
 header nav .menu-toggle .bar {
@@ -89,7 +80,7 @@ header nav .menu-toggle .bar {
   background-color: black;
 }
 
-header nav ul {
+header nav ul.nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,7 +94,7 @@ header nav ul {
   height: 4em;
 }
 
-header nav ul li {
+header nav ul.nav-menu li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,7 +105,7 @@ header nav ul li {
   height: 3em;
 }
 
-header nav ul li a {
+header nav ul.nav-menu li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,7 +119,7 @@ header nav ul li a {
   height: 100%;
 }
 
-header nav ul li a:hover {
+header nav ul.nav-menu li a:hover {
   color: white;
   background-color: black;
   -webkit-transition: all ease-in .3s;
@@ -158,7 +149,7 @@ main section.backImage .filter {
   min-height: 90vh;
   position: absolute;
   top: 0;
-  z-index: -100;
+  z-index: -10;
 }
 
 main section.backImage div.title {
@@ -348,9 +339,9 @@ section.second section.cards div.card p {
 
 /*========================= third page ============================*/
 section.third {
-  background-color: #0a0f2c;
+  background: linear-gradient(125deg, #d7811f, #852be6);
   min-width: 100%;
-  min-height: 100vh;
+  min-height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -563,7 +554,7 @@ section.joinUs {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #0a0f2c;
+  background: linear-gradient(125deg, #d7811f, #852be6);
 }
 
 section.joinUs div.join {
@@ -577,8 +568,6 @@ section.joinUs div.join {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 section.joinUs div.join h4.join_left {
@@ -790,18 +779,106 @@ footer div.info p {
 
 /*=============================== media =================================*/
 @media screen and (max-width: 900px) {
-  header div.logo {
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  header nav div.logo {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    position: relative;
+  }
+  header nav div.menu-toggle {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    -webkit-transform: translate(5%, 20%);
+            transform: translate(5%, 20%);
+  }
+  header nav div.menu-toggle .bar {
+    display: block;
+    cursor: pointer;
+  }
+  header nav div.menu-toggle:hover {
+    cursor: pointer;
+  }
+  header nav .menu-toggle.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  header nav .menu-toggle.is-active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  header nav .menu-toggle.is-active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+  }
+  header nav ul.nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    position: absolute;
+    top: 214px;
+    left: 0;
+    min-width: 100%;
+    min-height: 100px;
+    opacity: 0;
   }
-  header nav ul {
+  header nav ul.nav-menu li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    background-color: white;
+    min-width: 100%;
+    min-height: 100%;
+    border-bottom: 3px solid #cbcbcb;
   }
-  header nav ul a {
+  header nav ul.nav-menu li:hover {
+    border: black;
+  }
+  header nav ul.nav-menu li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-width: 100%;
+    min-height: 100%;
     padding: 0.5rem;
+  }
+  header nav ul.nav-menu li a:hover {
+    background-color: black;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+  }
+  header nav ul.nav-menu li a:hover P {
+    color: white;
+  }
+  header nav ul.nav-menu li a p {
+    color: black;
+    height: 15px;
+  }
+  header nav ul.nav-menu.active {
+    left: 0;
+    opacity: 1;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
   }
   main section.backImage {
     -webkit-box-align: center;
@@ -897,9 +974,8 @@ footer div.info p {
        object-fit: cover;
   }
   main section.joinUs div.join {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   footer div.info div.footerLogo img {
     width: 10vw;

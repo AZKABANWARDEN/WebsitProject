@@ -23,24 +23,24 @@ h6 {
 }
 
 /*=================== header-nav ==================*/
-
 header {
-  background-color: rgba(255, 255, 255, .8);
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  // background-color: rgba(255, 255, 255, .8);
   position: sticky;
   top: 0;
   z-index: 4;
   height: 4em;
   max-height: 4em;
   box-shadow: 0 10px 15px -15px;
+  nav {
+    display: flex;
+    height: 4em;
+    white-space: nowrap;
   
   .logo {
     display: flex;
     align-items: center;
-    flex: 7 1 200px;
     margin-left: 2rem;
+    flex: 1 1 100px;
     
     a {
       text-decoration: none;
@@ -55,10 +55,6 @@ header {
       }
     }
   }
-  nav {
-    flex: 3 1 200px;
-    height: 4em;
-    white-space: nowrap;
 
     .menu-toggle .bar{
       width: 25px;
@@ -68,7 +64,7 @@ header {
       background-color: black;
     }
 
-    ul {
+    ul.nav-menu {
       display: flex;
       list-style-type: none;
       justify-content: end;
@@ -121,7 +117,7 @@ main {
         min-height: 90vh;
         position: absolute;
         top: 0;
-        z-index: -100;
+        z-index: -10;
         }
         div.title{
           flex: 1 1 50%;
@@ -269,9 +265,9 @@ main {
 
 /*========================= third page ============================*/
   section.third {
-    background-color: rgb(10, 15, 44);
+    background: linear-gradient(125deg, #d7811f, #852be6);
     min-width: 100%;
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -417,15 +413,14 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: rgb(10, 15, 44);
+      background: linear-gradient(125deg, #d7811f, #852be6);
 
       div.join{
         display: flex;
         width: 40%;
         min-height: 50vh;
         justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;      
+        align-items: center;  
 
           h4.join_left{
             display: flex;
@@ -555,21 +550,105 @@ main {
   }
 
 /*=============================== media =================================*/
-    @media screen and (max-width:900px){
+    @media screen and (max-width: 900px){
       header{
-        div.logo{
-          justify-content: center;
-        }
-
+        position: sticky;
+        background-color: rgba(255, 255, 255,.9);
         nav{
-          ul{
+          div.logo{
+            justify-content: start;
+            flex: none;
+            position: relative;
+          }
+
+          // #mobile-menu{
+          //   position: relative;
+          //   top: 20%;
+          //   right: 5%;
+          //   transform: translate(5%,20%);
+          // }
+
+          div.menu-toggle{
+            position: absolute;
+            top: 20%;
+            right:5%;
+            transform: translate(5%,20%);
+          }
+
+          div.menu-toggle .bar{
+            display: block;
+            cursor: pointer;
+          }
+
+          div.menu-toggle:hover{
+            cursor: pointer;
+          }
+
+          .menu-toggle.is-active .bar:nth-child(2) {
+            opacity: 0;
+          }
+
+          .menu-toggle.is-active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+          }
+
+          .menu-toggle.is-active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+          }
+
+          ul.nav-menu{
+            display: flex;
+            flex-direction: column;
             justify-content: center;
-            a{
-              padding: 0.5rem;
+            position: absolute;
+            top: 214px;
+            left: 0;
+            min-width: 100%;
+            min-height: 100px;
+            opacity: 0;
+            
+            li{
+              display: flex;
+              justify-content: center;
+              background-color: rgb(255, 255, 255);
+              min-width: 100%;
+              min-height: 100%;
+              border-bottom:3px solid rgb(203, 203, 203);
+
+              &:hover{
+               border: black;
+              }
+
+              a{
+                display: flex;
+                justify-content: center;
+                min-width:100%;
+                min-height: 100%;
+                padding: 0.5rem;
+                        
+                &:hover{
+                  background-color: black;
+                  transition: all .3s ease-in;
+                }
+
+                &:hover P{
+                  color: white;
+                }
+                p{
+                  color: black;
+                  height: 15px;
+                }
+              }
             }
+          }
+          ul.nav-menu.active{
+            left: 0;
+            opacity: 1;
+            transition: all .5s ease;
           }
         }
       }
+
       main{
         section.backImage{
           align-items: center;
@@ -699,7 +778,6 @@ main {
               h3{
                 font-size: 2.7rem;
               }
-              p{}
             }
           }
         }
@@ -722,7 +800,7 @@ main {
         }
           section.joinUs{
             div.join{
-              justify-content: center;
+              flex-wrap: wrap;
             }
           }
       }
