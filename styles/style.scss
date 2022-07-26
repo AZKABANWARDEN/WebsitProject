@@ -561,13 +561,6 @@ main {
             position: relative;
           }
 
-          // #mobile-menu{
-          //   position: relative;
-          //   top: 20%;
-          //   right: 5%;
-          //   transform: translate(5%,20%);
-          // }
-
           div.menu-toggle{
             position: absolute;
             top: 20%;
@@ -605,7 +598,7 @@ main {
             left: 0;
             min-width: 100%;
             min-height: 100px;
-            opacity: 0;
+            display: none;
             
             li{
               display: flex;
@@ -643,7 +636,7 @@ main {
           }
           ul.nav-menu.active{
             left: 0;
-            opacity: 1;
+            display: flex;
             transition: all .5s ease;
           }
         }

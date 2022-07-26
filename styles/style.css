@@ -834,7 +834,7 @@ footer div.info p {
     left: 0;
     min-width: 100%;
     min-height: 100px;
-    opacity: 0;
+    display: none;
   }
   header nav ul.nav-menu li {
     display: -webkit-box;
@@ -876,7 +876,9 @@ footer div.info p {
   }
   header nav ul.nav-menu.active {
     left: 0;
-    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
   }
