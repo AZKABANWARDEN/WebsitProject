@@ -39,7 +39,7 @@ header {
   .logo {
     display: flex;
     align-items: center;
-    margin-left: 2rem;
+    margin-left: .5rem;
     flex: 1 1 100px;
     
     a {
@@ -553,7 +553,7 @@ main {
     @media screen and (max-width: 900px){
       header{
         position: sticky;
-        background-color: rgba(255, 255, 255,.9);
+        background-color: rgb(255, 255, 255);
         nav{
           div.logo{
             justify-content: start;
