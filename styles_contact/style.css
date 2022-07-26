@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+}
+
+div.feedback-section {
+  background: url(/DesignPic/Pictures/feedback_pic.jpg) no-repeat center;
+  background-size: cover;
+  padding: 5% 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.feedback-section h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+}
+
+div.feedback-section div.border {
+  width: 18rem;
+  height: 10px;
+  background: #34495e;
+  margin: 40px auto;
+  margin-top: 10px;
+}
+
+div.feedback-section form.feedback-form {
+  min-width: 30vw;
+  margin: 0;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+div.feedback-section form.feedback-form input.feedback-form-text {
+  display: block;
+  min-width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+div.feedback-section form.feedback-form input.feedback-form-text:focus {
+  -webkit-box-shadow: 0 0 10px 4px #34495e;
+          box-shadow: 0 0 10px 4px #34495e;
+}
+
+div.feedback-section form.feedback-form textarea.feedback-form-text {
+  resize: none;
+  min-width: 30vw;
+  min-height: 10rem;
+}
+
+div.feedback-section form.feedback-form input.feedback-form-btn {
+  float: right;
+  min-height: 10rem;
+  border: 0;
+  padding: 1rem;
+  background: #34495e;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+div.feedback-section form.feedback-form input.feedback-form-btn:hover {
+  background: #2980b9;
+}
+/*# sourceMappingURL=style.css.map */
