@@ -70,7 +70,7 @@ div.feedback-section form.feedback-form input.feedback-form-text:focus {
 div.feedback-section form.feedback-form textarea.feedback-form-text {
   resize: none;
   min-width: 30vw;
-  min-height: 10rem;
+  min-height: 9.8rem;
 }
 
 div.feedback-section form.feedback-form input.feedback-form-btn {
