@@ -1,5 +1,6 @@
 Camping Store Website
 ===
+- Visit https://azkabanwarden.github.io/WebsitProject/
 ![Website_pic](https://github.com/AZKABANWARDEN/WebsitProject/blob/master/DesignPic/Pictures/CoverPhoto_GIF.gif?raw=true)
 
 ## Feature
@@ -17,8 +18,6 @@ Support computer, tablet, mobile phone.
 ![Feedback](https://github.com/AZKABANWARDEN/WebsitProject/blob/master/DesignPic/Pictures/feedback_readme.png?raw=true)
 
 ## Thanks for your watching!
-
-- Visit https://azkabanwarden.github.io/WebsitProject/
 
 
 ###### tags: `#Website` `#Html` `#css` `#Javascript`
