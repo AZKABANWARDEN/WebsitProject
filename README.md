@@ -2,7 +2,7 @@ Camping Store Website
 ===
 Visit: https://azkabanwarden.github.io/WebsitProject/
 
-![Website_pic](https://github.com/AZKABANWARDEN/WebsitProject/blob/master/DesignPic/Pictures/CoverPhoto_GIF.gif?raw=true)
+![cover_gif](https://github.com/AZKABANWARDEN/WebsitProject/blob/master/DesignPic/Pictures/coverGIF%20.gif?raw=true)
 
 ## Feature
 
@@ -11,7 +11,7 @@ Visit: https://azkabanwarden.github.io/WebsitProject/
 Responsive Web Design  
 Support computer, tablet, mobile phone.
 
-![RWD_pic](https://github.com/AZKABANWARDEN/WebsitProject/blob/master/DesignPic/Pictures/RWD_GIF.gif?raw=true)
+![RWD_gif](https://github.com/AZKABANWARDEN/WebsitProject/blob/master/DesignPic/Pictures/rwdGIF.gif?raw=true)
 - Feedback
 給予使用者提供回饋的管道  
  Let users provide suggestions.
