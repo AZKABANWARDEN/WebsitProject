@@ -6,7 +6,7 @@ Visit: https://azkabanwarden.github.io/WebsitProject/
 
 ## Feature
 
-- RWD 手刻響印式網頁  
+- RWD 手刻響應式網頁  
 支援電腦、平板、手機  
 Responsive Web Design  
 Support computer, tablet, mobile phone.
