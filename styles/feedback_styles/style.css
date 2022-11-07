@@ -5,7 +5,7 @@
 }
 
 div.feedback-section {
-  background: url(/design_pic/Pictures/feedback_pic.jpg) no-repeat center;
+  background: url(../../design_pic/pictures/feedback_pic.jpg) no-repeat center;
   background-size: cover;
   padding: 5% 0;
   min-width: 100vw;

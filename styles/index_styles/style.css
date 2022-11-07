@@ -93,7 +93,7 @@ header nav ul.nav-menu li a:hover {
 main section.backImage {
   min-width: 100%;
   min-height: 90vh;
-  background-image: url(/design_pic/Pictures/bg.jpg);
+  background-image: url(../../design_pic/pictures/bg.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
